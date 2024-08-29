@@ -1,0 +1,495 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  line-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.8);
+  transition: all 0.5s ease 0s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin-left: 50px;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 51px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+}
+
+.navbar li {
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Optional: for smooth color transition */
+}
+
+.navbar li:hover {
+  color: #c54313;
+}
+
+.navbar li.active {
+  color: #c54313; /* Color when clicked */
+}
+
+.nav_button {
+  line-height: auto;
+  width: auto;
+  background-color: #c54313;
+  color: white;
+  border: 0px;
+  padding: 15px;
+  font-size: 1rem;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.nav_button:hover {
+  background-color: #a32c00;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  /* opacity: 0.8; */
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background-color: rgba(0, 59, 100, 0.675);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.texts {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #c54313;
+}
+
+.hero_button {
+  line-height: auto;
+  width: auto;
+  background-color: #c54313;
+  color: white;
+  border: 0px;
+  padding: 15px;
+  font-size: 1rem;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.hero_button:hover {
+  background-color: #a32c00;
+}
+.hero {
+  text-align: center;
+  position: relative;
+  margin: 100px;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold; /* Add space below the title */
+}
+
+.linelogo {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  height: auto;
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Add space below the image */
+}
+
+.para {
+  font-size: 1rem;
+  color: rgb(66, 64, 64);
+}
+.contenthero {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100%;
+  width: 100%; /* Add some spacing between the blocks */
+}
+
+.block {
+  width: 30%;
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: 10%;
+}
+
+.common {
+  height: auto;
+  width: auto;
+  align-self: self-start;
+}
+.row {
+  margin-left: 8%;
+}
+
+.heading {
+  text-align: left;
+  margin: 0px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.paras {
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: rgb(66, 64, 64);
+  text-align: left; /* Ensures text starts from the left */
+  margin: 0; /* Removes any default margin that may be causing indentation */
+  padding: 0; /* Removes any default padding */
+  padding-bottom: 10px;
+}
+
+.change {
+  font-size: 0.8rem;
+  color: #c54313;
+  text-align: left;
+  cursor: pointer;
+}
+
+.change:hover {
+  text-decoration: underline;
+}
+
+.about {
+  position: relative;
+  text-align: center;
+}
+.aboutoverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.blockbox {
+  width: auto;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+}
+.boxs {
+  text-transform: capitalize;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 19px;
+  color: #232d39;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.icon {
+  display: inline;
+}
+.boxtext {
+  padding-left: 5%;
+}
+
+.boxbutton {
+  text-transform: capitalize;
+  width: 115%;
+  padding: 25px;
+  display: flex;
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 19px;
+  letter-spacing: 0.9px;
+  font-weight: 600;
+  background-color: #c54313;
+  color: white;
+  border: #c54313;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.classesContainer {
+  width: auto;
+  height: auto;
+  display: flex;
+  /* margin-top: 5%; */
+}
+.classContent {
+  padding-left: 7%;
+}
+
+.firsttraining {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  height: auto;
+  text-align: left;
+}
+
+.firstday {
+  width: 89vh;
+  height: auto;
+  align-self: flex-end;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: -35px;
+}
+
+.firstdaytext {
+  /* margin-top: 20px; */
+  text-align: left;
+}
+
+.headingText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.active {
+  color: #c54313; /* Change the font color to your preferred active color */
+  font-weight: bold; /* Optional: Make the text bold */
+  border-bottom: 2px solid #c54313; /* Optional: Add a border to indicate active state */
+}
+
+.activeTextColor {
+  color: #c54313; /* Change this to your desired color */
+}
+.schedulecontent {
+  margin-top: 100px;
+  position: relative;
+}
+.overlays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.scheduletext {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+.schedulepara {
+  font-size: 1rem;
+  text-align: center;
+}
+.tableschedule {
+  position: relative;
+}
+.scheduletable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  width: auto;
+  border: 1px solid #ddd;
+  padding: 10px 40px; /* Adjusted padding to reduce space */
+  text-align: center;
+  white-space: nowrap; /* Prevents line breaks */
+}
+th {
+  border: 1px solid white;
+  text-align: center;
+  padding: 40px;
+  white-space: nowrap;
+}
+.tableRows {
+  border: 1px solid white;
+}
+.weekname {
+  position: relative;
+  text-align: center;
+}
+.weeks {
+  margin-top: 7%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.weekList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.weekList li {
+  margin-right: 10px;
+}
+.weekList li:hover {
+  color: #c54313;
+  cursor: pointer;
+}
+.schedulelast {
+  position: relative;
+  margin-top: 100px;
+}
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.trainerType {
+  color: #c54313;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.cardName {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cardAbout {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.socialIcons {
+  /* border: 1px solid black; */
+  bottom: 15px;
+  left: 15px;
+  position: relative;
+}
+
+.sIcons {
+  padding: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.sIcons :hover {
+  color: #c54313;
+}
+
+.contactContainer {
+  display: flex;
+  margin-top: 100px;
+}
+.formbox {
+  background-image: url("./schedule.jpg");
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+}
+
+.formcontainer {
+  border: 1px solid white;
+  background-color: white;
+  width: 75%;
+  height: 75%;
+  max-width: 90%;
+  margin: 8%;
+  border-radius: 5px;
+}
+
+.contactform {
+  border: 1px solid bl;
+  display: flex;
+  padding: 10%;
+  flex-direction: column;
+}
+
+.formrow {
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.formrow input,
+.formrow textarea {
+  flex: 2;
+  padding: 16px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+}
+
+.contactform button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  background-color: #d0570c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactform button:hover {
+  background-color: #a32c00;
+}
